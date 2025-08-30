@@ -38,9 +38,7 @@ The framework demonstrates consistent improvements in Energy Efficiency, Through
 - Minimum 8GB RAM (16GB recommended for large datasets)
 
 ## Installation
-bash
 pip install -r requirements.txt
-
 
 ## Quick Start
 The framework provides GAT-DRL schedulers for HPC job scheduling with energy optimization. Initialize the system with your workload data and begin training:
@@ -51,35 +49,4 @@ from GAT_DRL_Scheduler import SystemConfig, HPCSchedulingEnvironment
 config = SystemConfig()
 env = HPCSchedulingEnvironment(workload_data, system_type="polaris", config=config)
 
-
 See the `examples/` directory for complete implementation details and usage patterns.
-
-
-
-Installation and Dependencies
-System Requirements
-1.	Python 3.8 or higher
-2.	CUDA-compatible GPU (optional but recommended for training)
-3.	Minimum 8GB RAM (16GB recommended for large datasets)
-
-Code Organization
-src/
-├── models/
-│   ├── temporal_graph_attention.py  
-│   ├── actor_critic.py              
-│   └── energy_model.py              
-├── environment/
-│   ├── hpc_scheduling_env.py      
-│   └── workload_processing.py      
-├── schedulers/
-│   ├── gat_drl_scheduler.py        
-│   └── baseline_schedulers.py
-├── evaluation/
-│   ├── performance_metrics.py      
-│   └── statistical_analysis.py     
-└── utils/
-    ├── system_config.py          
-    └── data_generation.py          
-
-
-
