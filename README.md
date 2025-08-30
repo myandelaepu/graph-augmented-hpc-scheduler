@@ -18,15 +18,6 @@ Actor-Critic Network Architecture
 1.	Policy network for scheduling decision generation
 2.	Value network for state evaluation and reward estimation
 3.	Entropy regularization for exploration-exploitation balance
-# Energy-Aware Environment
-1.	Physics-based power consumption modeling
-2.	Real-time resource utilization tracking
-3.	Multi-dimensional reward function incorporating energy and performance metrics
-Scheduling Policy Options
-1.	FIFO (First-In-First-Out)
-2.	SJF (Shortest Job First)
-3.	Priority-based scheduling with capability awareness
-4.	Adaptive load-balancing strategies
 # Performance Results
 The framework demonstrates consistent improvements in Energy Efficiency, Throughput, and Resource Utilization across multiple HPC systems (Polaris System, Mira System,	Cooley System).
 
