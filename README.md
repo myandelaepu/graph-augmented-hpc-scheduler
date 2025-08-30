@@ -29,6 +29,33 @@ Scheduling Policy Options
 4.	Adaptive load-balancing strategies
 # Performance Results
 The framework demonstrates consistent improvements in Energy Efficiency, Throughput, and Resource Utilization across multiple HPC systems (Polaris System, Mira System,	Cooley System).
+
+# Installation and Dependencies
+
+## System Requirements
+- Python 3.8 or higher
+- CUDA-compatible GPU (optional but recommended for training)
+- Minimum 8GB RAM (16GB recommended for large datasets)
+
+## Installation
+bash
+pip install -r requirements.txt
+
+
+## Quick Start
+The framework provides GAT-DRL schedulers for HPC job scheduling with energy optimization. Initialize the system with your workload data and begin training:
+
+from GAT_DRL_Scheduler import SystemConfig, HPCSchedulingEnvironment
+
+# Configure your HPC system parameters
+config = SystemConfig()
+env = HPCSchedulingEnvironment(workload_data, system_type="polaris", config=config)
+
+
+See the `examples/` directory for complete implementation details and usage patterns.
+
+
+
 Installation and Dependencies
 System Requirements
 1.	Python 3.8 or higher
